@@ -1,0 +1,107 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+    color: rgba(28, 28, 28, 0.92);
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.6rem;
+}
+
+a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a:hover{
+    color:darkorchid;
+}
+
+button{
+    background-color:rgb(67, 247, 187);
+    font-size: 2rem;
+    border: none;
+    position: fixed;
+    top: 50px;
+    left: 10vw;
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+button.active{
+    transform: translateX(0px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: box-shadow 0.3s ease-in-out;
+    z-index: 1;
+}
+
+nav{
+    position: fixed;
+    background-color: rgb(67, 247, 187);
+    height: 100vh;
+    width: 10vw;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    transform: translateX(-350px);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.active{
+    transform: translateX(0px);
+}
+
+nav ul{
+ padding-top: 180px;
+ margin: 0;
+ list-style-type: none;   
+ text-align: right;
+}
+
+nav ul li{
+    padding: 1rem 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
